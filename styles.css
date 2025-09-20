@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('img/background.webp') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+header {
+    background-color: #efededcc;
+    padding: 20px;
+}
+header h1 {
+    color: rgb(78, 76, 76);
+    animation-name: inherit;
+    margin: 10px 0;
+    font-style:oblique;
+    font-size: 45px;
+    text-shadow: 1px 2px 3px rgb(56, 37, 79);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+nav a {
+    color: rgb(54, 52, 52);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 07px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover{
+    color: #f04e30;
+}
+nav a:hover {
+    background-color: rgba(211, 211, 211, 0.3);
+}
+.section {
+    display: none;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 20px;
+}
+.section.active {
+    display: block;
+}
+button {
+    background-color: #f04e30;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #c03c20;
+}
+
+/* Service Box Animation */
+.service-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    max-width: 80%;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.service-box img {
+    width: 40%;
+    border-radius: 10px;
+    margin: 20px;
+}
+.service-box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.service-box.hide {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+footer {
+   
+  
+    color: rgb(16, 16, 16);
+    padding: 05px;
+    position:initial;
+    width: 100%;
+    bottom: 0;
+}
+
